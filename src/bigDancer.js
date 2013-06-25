@@ -1,6 +1,7 @@
 var makeBigDancer = function(top, left, timeBetweenSteps){
   //new makeDancer(this,arguments);
   this.$node = $('<span class="big"></span>');
+  debugger
   makeDancer.apply(this,arguments);
 
 

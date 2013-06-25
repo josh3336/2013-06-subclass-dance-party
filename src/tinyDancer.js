@@ -1,8 +1,8 @@
 var makeTinyDancer = function(top, left, timeBetweenSteps){
   //new makeDancer(this,arguments);
-  this.$node = $('<img src="http://assets.rollingstone.com/assets/images/list_item/elton-john-20101202/elton-john.jpg" id="irc_mi" style="margin-top: 27px;" width="306" height="306">');
+  this.$node = $('<img class="tiny" src="http://assets.rollingstone.com/assets/images/list_item/elton-john-20101202/elton-john.jpg" width="36" height="36">');
+  
   makeDancer.apply(this,arguments);
-
 
 };
 

@@ -1,16 +1,16 @@
-var makeBigDancer = function(top, left, timeBetweenSteps){
+var makeTinyDancer = function(top, left, timeBetweenSteps){
   //new makeDancer(this,arguments);
-  this.$node = $('<span class="big"></span>');
+  this.$node = $('<span class="tiny"></span>');
   makeDancer.apply(this,arguments);
 
 
 };
 
-makeBigDancer.prototype =  Object.create(makeDancer.prototype);
-makeBigDancer.prototype.constructor = makeBigDancer;
+makeTinyDancer.prototype =  Object.create(makeDancer.prototype);
+makeTinyDancer.prototype.constructor = makeTinyDancer;
 
 
-makeBigDancer.prototype.step = function(){
+makeTinyDancer.prototype.step = function(){
     // call the old version of step at the beginning of any call to this new version of step
     makeDancer.prototype.step.apply(this);
     /* toggle() is a jQuery method to show/hide the <span> tag.
@@ -20,7 +20,7 @@ makeBigDancer.prototype.step = function(){
 };
 
 
-makeBigDancer.prototype.colorful = function(){
+makeTinyDancer.prototype.colorful = function(){
    // this.$node = $('<span class="big"></span>');
     $('span.dancer').toggleClass('big');
 
